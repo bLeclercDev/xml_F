@@ -4,11 +4,8 @@
 	<xsl:template match="/jeux">
 		<jeux>
 			<xsl:for-each select="jeu">
-				<jeu>
-					<nom>
-						<xsl:value-of select="nom" />
-					</nom>
-				</jeu>
+				<xsl:sort select="année"></xsl:sort>
+				<jeu nom="{nom}" année="{année}"></jeu>
 			</xsl:for-each>
 		</jeux>
 	</xsl:template>
