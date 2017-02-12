@@ -8,18 +8,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <?php
-    $home = true;
-    include_once 'templates/navbar.php';?>
+<?php
+$xmlToXml = true;
+include_once 'templates/navbar.php';
 
-    <div class="container">
-	    <div class="jumbotron">
-	    	<h1>Transformations XML</h1>
-	    	<p>
-	    		Démonstration pour le cours de XML avec du <strong>XSL</strong>, du <strong>CSS</strong> et du <strong>FOP</strong>.<br>
-	    		<em>Par Brice Leclerc et Billy Villena</em>
-	    	</p>
-	    </div>
-    </div>
+$xslDoc = new DOMDocument();
+$xslDoc->load("xml/jeux.xsl");
+
+$xmlDoc = new DOMDocument();
+$xmlDoc->load("xml/jeux-sans-css.xml");
+
+$proc = new XSLTProcessor();
+$proc->importStylesheet($xslDoc);
+echo $proc->transformToXml($xmlDoc);
+?>
 </body>
 </html>

@@ -38,24 +38,6 @@
             </critique>
         </critiques>
     </jeu>
-    <jeu type="RTS">
-        <nom>Age Of Empires II</nom>
-        <développeur>Microsoft</développeur>
-        <année>1999</année>
-        <consoles>
-            <console>PC</console>
-        </consoles>
-        <critiques>
-            <critique note="10">
-                <résumé>J'vais tout casser. Kaamelott camelote ! Il ne restera qu'un tas de cailloux !</résumé>
-                <auteur>AttilaLeFléauDeDieu</auteur>
-            </critique>
-            <critique note="1">
-                <résumé>Les anglais sont trop cheatés è_é</résumé>
-                <auteur>Fu£$LesRosbifs</auteur>
-            </critique>
-        </critiques>
-    </jeu>
     <jeu type="FPS">
         <nom>Battlefield 1</nom>
         <développeur>Digital Illusions Creative Entertainment</développeur>
@@ -73,24 +55,6 @@
             <critique note="5">
                 <résumé>JADOR MAI DURE §§§</résumé>
                 <auteur>JFKévin</auteur>
-            </critique>
-        </critiques>
-    </jeu>
-    <jeu type="FPS">
-        <nom>Counter Strike</nom>
-        <développeur>Valve</développeur>
-        <année>2000</année>
-        <consoles>
-            <console>PC</console>
-        </consoles>
-        <critiques>
-            <critique note="7">
-                <résumé>Trop de russes</résumé>
-                <auteur>GaKPital</auteur>
-            </critique>
-            <critique note="5">
-                <résumé>Je suis nuuuuul Mais c'est marrant</résumé>
-                <auteur>CSS</auteur>
             </critique>
         </critiques>
     </jeu>

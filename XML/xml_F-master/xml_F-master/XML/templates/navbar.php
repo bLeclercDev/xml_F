@@ -10,8 +10,8 @@
                         <li><a href="xml/jeux-sans-css.xml">XML sans css</a></li>
                         <li><a href="xml/jeux-avec-css.xml">XML avec css</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="xmlToXml.php">Transformation XSL d'un XML en XML</a></li>
-                        <li class="<?php echo isset($xmlToHtml) ? 'active' : '';?>"><a href="xmlToHtml.php">Transformation XSL d'un XML en HTML</a></li>
+                        <li class="<?php echo isset($xmlToXml) ? 'active' : '';?>"><a href="xmlToXml.php">Transformation XSL d'un XML en XML</a></li>
+                        <li><a href="jeux-avec-css.xml">XML avec css</a></li>
                     </ul>
                 </li>
             </ul>
