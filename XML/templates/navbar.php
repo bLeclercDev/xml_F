@@ -5,14 +5,19 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fichiers XML <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transformation CSS <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="xml/jeux-sans-css.xml">XML sans css</a></li>
                         <li><a href="xml/jeux-avec-css.xml">XML avec css</a></li>
-                        <li role="separator" class="divider"></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transformation XSL <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
                         <li class="<?php echo isset($xmlToText) ? 'active' : '';?>"><a href="xmlToText.php">Transformation XSL d'un XML en Texte brut</a></li>
                         <li><a href="xmlToXml.php">Transformation XSL d'un XML en XML</a></li>
                         <li class="<?php echo isset($xmlToHtml) ? 'active' : '';?>"><a href="xmlToHtml.php">Transformation XSL d'un XML en HTML</a></li>
+                        <li><a href="xmlToPdf.php">Transformation XSL d'un XML en PDF</a></li>
                     </ul>
                 </li>
             </ul>
