@@ -22,11 +22,11 @@
 
         <body>
             <h3>Affiche les jeux avec un foreach</h3>
-            <table width="1000" border="1" cellspacing="0" cellpadding="0">
+            <table class="table">
                 <tr>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Année</th>
+                    <th>Nom</th>
+                    <th>Type</th>
+                    <th>Année</th>
                 </tr>
                 <xsl:for-each select="jeu">
                     <tr>
@@ -38,11 +38,11 @@
             </table>
             <br/> <!-- balise autofermant, </br> et <br> ne marchent pas -->
             <h3>Sort les jeux en fonction du nom</h3>
-            <table width="1000" border="1" cellspacing="0" cellpadding="0">
+            <table class="table">
                 <tr>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Année</th>
+                    <th>Nom</th>
+                    <th>Type</th>
+                    <th>Année</th>
                 </tr>
                 <xsl:for-each select="jeu">
                     <xsl:sort select="nom"></xsl:sort>
@@ -55,12 +55,12 @@
             </table>
             <br/>
             <h3>Ajout des if</h3>
-            <table width="1000" border="1" cellspacing="0" cellpadding="0">
+            <table class="table">
                 <tr>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Année</th>
-                    <th scope="col">Commentaire</th>
+                    <th>Nom</th>
+                    <th>Type</th>
+                    <th>Année</th>
+                    <th>Commentaire</th>
                 </tr>
                 <xsl:for-each select="jeu">
                     <xsl:sort  select="nom"></xsl:sort>

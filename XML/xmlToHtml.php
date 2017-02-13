@@ -19,8 +19,10 @@
 	$xmlDoc->load("xml/jeux-sans-css.xml");
 
 	$proc = new XSLTProcessor();
-	$proc->importStylesheet($xslDoc);
-	echo $proc->transformToXML($xmlDoc);
-	?>
+	$proc->importStylesheet($xslDoc);?>
+
+	<div class="container">
+		<?php echo $proc->transformToXML($xmlDoc);?>
+	</div>
 </body>
 </html>
