@@ -5,7 +5,9 @@
 		<jeux>
 			<xsl:for-each select="jeu">
 				<xsl:sort select="année"></xsl:sort>
-				<jeu nom="{nom}" année="{année}"></jeu>
+				<jeu année="{année}" type="{@type}">
+					<xsl:value-of select="nom" />
+				</jeu>
 			</xsl:for-each>
 		</jeux>
 	</xsl:template>
